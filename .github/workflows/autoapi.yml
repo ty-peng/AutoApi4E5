@@ -32,6 +32,7 @@ jobs:
       # 上传新的 refresh_token 到仓库
       - name: Commit New Refresh Token
         run: |
+          git pull
           git config --global user.email AutoUpdateRobot@email.com
           git config --global user.name AutoUpdateRobot
           git add .
