@@ -33,7 +33,7 @@ jobs:
       - name: Commit New Refresh Token
         run: |
           git pull
-          git config --global user.email AutoUpdateRobot@email.com
+          git config --global user.email AutoUpdateRobot@xxx.com
           git config --global user.name AutoUpdateRobot
           git add .
           git commit -m "update new refresh_token" -a
