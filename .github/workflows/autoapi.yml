@@ -7,7 +7,7 @@ on:
     tags:
       - "v*"
   schedule:
-    - cron: "12 */6 * * *"
+    - cron: "15 */5 * * *"
   watch:
     types: [started]
 
@@ -17,7 +17,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id # 自己点的 start
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3.1.0
       # 默认安装有 python 环境
       - name: Install requests
         run: |
