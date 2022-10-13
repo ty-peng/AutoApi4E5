@@ -1,13 +1,8 @@
 name: Auto Api E5
 
 on:
-  release:
-    types: [published]
-  push:
-    tags:
-      - "v*"
   schedule:
-    - cron: "15 */5 * * *"
+    - cron: '15 */5 * * *'
   watch:
     types: [started]
 
