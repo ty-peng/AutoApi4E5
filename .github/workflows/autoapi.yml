@@ -2,7 +2,7 @@ name: Auto Api E5
 
 on:
   schedule:
-    - cron: '15 */5 * * *'
+    - cron: '30 * * * *'
   watch:
     types: [started]
 
