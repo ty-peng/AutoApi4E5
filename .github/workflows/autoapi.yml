@@ -38,8 +38,8 @@ jobs:
     - name: Commit New Refresh Token
       run: |
         git pull
-        git config --global user.email xxx@xxx.com
-        git config --global user.name xxx
+        git config --global user.email xxxxxxxxxx@xxxxxxx.com
+        git config --global user.name xxxxxx
         git add .
         git commit -m "update new refresh_token" -a
     - name: Push changes
